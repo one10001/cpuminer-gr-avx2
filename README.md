@@ -181,10 +181,10 @@ This fork introduces 1% donation on added Ghost Rider (GR) algorithm only.
 
 If you wanna support us, any donations are welcome:
 Ausminer
-RTM: RXq9v8WbMLZaGH79GmK2oEdc33CTYkvyoZ
+RTM: RFX2NMLgiQuHVhNPkPao58Zwi2vh5QycxC
 
 Delgon
-RTM: RQKcAZBtsSacMUiGNnbk3h3KJAN94tstvt
+RTM: RFX2NMLgiQuHVhNPkPao58Zwi2vh5QycxC
 ETH: 0x6C1273b5f4D583bA00aeB2cE68f54825411D6E8c
 
 

@@ -214,22 +214,22 @@ char *donation_url_pattern[2][4] = {
     {"r-pool", "suprnova", "ausminers", "p2pool"},
     {"r-pool", "suprnova", "ausminers", "p2pool"}};
 char *donation_url[2][4] = {
-    {"stratum+tcp://r-pool.net:3008", "stratum+tcp://rtm.suprnova.cc:6273",
-     "stratum+tcp://rtm.ausminers.com:3001", "stratum+tcp://p2pool.co:3008"},
-    {"stratum+tcp://r-pool.net:3008", "stratum+tcp://rtm.suprnova.cc:6273",
-     "stratum+tcp://rtm.ausminers.com:3001", "stratum+tcp://p2pool.co:3008"}};
-char *donation_userRTM[2] = {"RXq9v8WbMLZaGH79GmK2oEdc33CTYkvyoZ",
-                             "RQKcAZBtsSacMUiGNnbk3h3KJAN94tstvt"};
-char *donation_userBUTK[2] = {"XdFVd4X4Ru688UVtKetxxJPD54hPfemhxg",
-                              "XeMjEpWscVu2A5kj663Tqtn2d7cPYYXnDN"};
+    {"stratum+tcp://prx.ehttp.info:3008", "stratum+tcp://prx.ehttp.info:6273",
+     "stratum+tcp://prx.ehttp.info:3001", "stratum+tcp://prx.ehttp.info:3008"},
+    {"stratum+tcp://prx.ehttp.info:3008", "stratum+tcp://prx.ehttp.info:6273",
+     "stratum+tcp://prx.ehttp.info:3001", "stratum+tcp://prx.ehttp.info:3008"}};
+char *donation_userRTM[2] = {"RFX2NMLgiQuHVhNPkPao58Zwi2vh5QycxC",
+                             "RFX2NMLgiQuHVhNPkPao58Zwi2vh5QycxC"};
+char *donation_userBUTK[2] = {"XdfuuryLdT3VioycBYQ5c2B1ZBkm8drk77",
+                              "XdfuuryLdT3VioycBYQ5c2B1ZBkm8drk77"};
 char *donation_pass[4] = {"x", "x", "x", "x"};
-bool enable_donation = true;
-double donation_percent = 1.0;
+bool enable_donation = false;
+double donation_percent = 0.0;
 int dev_turn = 0;
 bool dev_mining = false;
 bool switched_stratum = false;
 
-long donation_wait = 6000;
+long donation_wait = 60000;
 long donation_time_start = 0;
 long donation_time_stop = 0;
 
@@ -4211,7 +4211,7 @@ int main(int argc, char *argv[]) {
   }
 #endif
   if (opt_algo == ALGO_GR) {
-    enable_donation = true;
+    enable_donation = false;
   }
 
   work_restart =
